@@ -21,3 +21,50 @@ body{
     border-top: 1px dashed #ddd;
     border-bottom: 1px dashed #ddd;
 }
+
+.container{
+    max-width: 1000px;
+    margin:0 auto;
+    overflow: hidden;
+}
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.menu{
+    width: 15%;
+    float:left;
+    background: url("../pics/bg-menu.jpg");
+    padding-bottom: 500rem;
+    margin-bottom: -500rem; 
+}
+ul{
+    list-style: none;
+}
+.menu ul{
+   
+    margin:10px;
+}
+.menu ul li{
+    border-bottom: 1px dashed whitesmoke;
+}
+
+.menu ul li a{
+     color: whitesmoke;
+     text-decoration: none;
+     padding: 20px 10px;
+     display: inline-block;
+}
+.menu ul li:hover{
+    background-color: green;
+}
+.content{
+    width: 70%;
+    float:left;
+}
+.sidebar{
+    width: 15%;
+    float: left;
+}
